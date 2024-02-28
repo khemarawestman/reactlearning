@@ -1,0 +1,66 @@
+.sidebar {
+  width: 60px; 
+  height: 100vh; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  background-color: #f0f0f0; /* Light gray for a clean, minimalist look */
+  color: #333; /* Darker text for contrast */
+  overflow-x: hidden; 
+  padding-top: 20px;
+  transition: width 0.5s; 
+}
+
+.sidebar:hover {
+  width: 250px; 
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  transition: opacity 0.5s; 
+  opacity: 0; 
+}
+
+.sidebar:hover .logo {
+  opacity: 1;
+}
+
+.sidebar .nav-list {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.sidebar .nav-list li {
+  padding: 15px 10px;
+}
+
+.sidebar .nav-list li a {
+  color: #333; 
+  text-decoration: none; 
+  display: block;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.sidebar .nav-list li a:hover {
+  background-color: #d1d1d1; 
+}
+
+
+.social-media-icons {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.social-media-icons a {
+  margin: 0 5px;
+  color: black; 
+  font-size: 24px; 
+}
