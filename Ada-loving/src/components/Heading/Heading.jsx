@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './heading.css'; // Your existing Heading styles
-import PopUp from '../PopUp/PopUp';// Update the import path as per your directory structure
+import './heading.css';
+import PopUp from '../PopUp/PopUp';
 
 const Heading = () => {
     const imgUrl = "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg"
@@ -57,6 +57,7 @@ const Heading = () => {
     <div style={{ padding: '20px', textAlign: 'justify', fontSize: '16px', lineHeight: '1.6' }}>
       <p>{fullText}</p>
     </div>
+    
   } 
 />
 

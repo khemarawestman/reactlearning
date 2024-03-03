@@ -1,0 +1,69 @@
+.train-ticket-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    margin: auto;
+    background-color: #CECECE;
+  }
+  
+  .train-ticket-form h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    
+  }
+  
+  .train-ticket-form > div {
+    text-align: center;
+    background: rgb(226,226,226);
+    background: linear-gradient(90deg, rgba(226,226,226,1) 30%, rgba(236,236,236,1) 48%);
+  }
+  
+  .train-ticket-form strong {
+    font-size: 1.125rem;
+  }
+  
+  .train-ticket-form span {
+    font-size: 1.5rem;
+  }
+  
+  .train-ticket-form label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .train-ticket-form input[type="radio"]
+  {
+    margin-right: 0.5rem;
+  }
+  
+  .train-ticket-form select,
+  .train-ticket-form input[type="text"] {
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  .train-ticket-form button {
+    width: 100%;
+    padding: 0.625rem;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .train-ticket-form button:hover {
+    background-color: #333;
+  }
+  
+  
+  .train-ticket-form .radio-group,
+  .train-ticket-form .checkbox-group {
+    display: flex;
+    justify-content: center;
+  }
+  
