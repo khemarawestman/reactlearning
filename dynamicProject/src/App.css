@@ -1,0 +1,32 @@
+// App.jsx
+import React, { useState } from 'react';
+import Insults from './Insults'; // Assuming Insults is your component for displaying insults
+
+function App() {
+    const [currentInsultIndex, setCurrentInsultIndex] = useState(0); // State to track the current insult index
+
+    // Function to go to the next insult
+    const goToNextInsult = () => {
+        setCurrentInsultIndex((prevIndex) => prevIndex + 1);
+    };
+
+    // Check if the currentInsultIndex is beyond the length of the insults array and reset it if necessary
+    if (currentInsultIndex >= Insults.length) {
+        setCurrentInsultIndex(0); // Reset to the first insult if we've reached the end
+    }
+
+    return (
+        <div>
+            {/* Displaying the insult at the current index */}
+            <div>
+                <p>{Insults[currentInsultIndex].insult}</p>
+                <em>{Insults[currentInsultIndex].play}</em>
+            </div>
+            
+            {/* Button to go to the next insult */}
+            <button onClick={goToNextInsult}>Next Insult</button>
+        </div>
+    );
+}
+
+export default App;
