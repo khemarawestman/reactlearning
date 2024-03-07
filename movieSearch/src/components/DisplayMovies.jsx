@@ -5,7 +5,7 @@ const DisplayMovies = ({ movies }) => {
   return (
     <div>
       {movies.length > 0 ? (
-        movies.map((movie) => <MovieCard key={movie.ID} movie={movie} />)
+        movies.map((movie) => <MovieCard key={movie.imbID} movie={movie} />)
       ) : (
         <p>Inga filmer hittades.</p>
       )}
