@@ -43,16 +43,26 @@ const App = () => {
           'Content-Type': 'application/json'
         }
       });
+
       if (response.ok) {
         const newNote = await response.json();
-        setNotes(prevNotes => [...prevNotes, newNote]); 
+        setNotes(prevNotes => [...prevNotes, newNote]);
       } else {
+        // Log additional information for debugging
         console.error("Failed to add note: Response was not OK.");
+        console.log(`Status Code: ${response.status}`);
+        try {
+          const errorResponse = await response.json();
+          console.log('Error Response:', errorResponse);
+        } catch (error) {
+          console.log('Failed to parse error response:', error);
+        }
       }
     } catch (error) {
       console.error("Det gick inte att skapa en ny anteckning", error);
     }
-  };
+};
+
   
   const updateNote = async (id, updatedNote) => {
     try {
